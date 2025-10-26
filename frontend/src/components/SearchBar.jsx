@@ -1,6 +1,11 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 
+/**
+ * Search bar component
+ * Simple black and white design matching Sora theme
+ */
 export default function SearchBar() {
   const [query, setQuery] = useState('');
   const navigate = useNavigate();
@@ -15,19 +20,14 @@ export default function SearchBar() {
   return (
     <form onSubmit={handleSubmit} className="w-full max-w-md">
       <div className="relative">
+        <MagnifyingGlassIcon className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
         <input
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search content..."
-          className="w-full px-4 py-2 bg-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          placeholder="Search videos..."
+          className="w-full pl-10 pr-4 py-2.5 bg-gray-900 text-white border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/20 focus:border-gray-500 transition-all placeholder-gray-500"
         />
-        <button
-          type="submit"
-          className="absolute right-2 top-1/2 -translate-y-1/2 px-4 py-1 bg-blue-600 hover:bg-blue-700 rounded text-white transition-colors"
-        >
-          Search
-        </button>
       </div>
     </form>
   );

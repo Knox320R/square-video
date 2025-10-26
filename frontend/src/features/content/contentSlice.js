@@ -21,9 +21,18 @@ export const fetchContentById = createAsyncThunk(
   }
 );
 
+export const fetchLinks = createAsyncThunk(
+  'content/fetchLinks',
+  async () => {
+    const response = await axios.get(`${API_BASE}/links`);
+    return response.data;
+  }
+);
+
 const initialState = {
   items: [],
   currentItem: null,
+  links: [],
   loading: false,
   error: null,
 };
@@ -61,6 +70,9 @@ export const contentSlice = createSlice({
       .addCase(fetchContentById.rejected, (state, action) => {
         state.loading = false;
         state.error = action.error.message;
+      })
+      .addCase(fetchLinks.fulfilled, (state, action) => {
+        state.links = action.payload.data || action.payload;
       });
   },
 });
