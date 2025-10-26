@@ -29,7 +29,7 @@ export default function Login() {
     <div className="min-h-screen bg-black text-white">
       <Sidebar />
 
-      <div className="ml-16 md:ml-20 pb-16 flex items-center justify-center min-h-screen px-4">
+      <div className="ml-16 pb-16 flex items-center justify-center min-h-screen px-4">
         <div className="w-full max-w-md">
           <Link to="/" className="inline-flex items-center gap-2 mb-8 text-gray-400 hover:text-white transition-colors">
             <ArrowLeftIcon className="w-5 h-5" />

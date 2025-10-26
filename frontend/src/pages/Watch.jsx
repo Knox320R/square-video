@@ -46,7 +46,7 @@ export default function Watch() {
     return (
       <div className="min-h-screen bg-black flex items-center justify-center">
         <Sidebar />
-        <div className="text-white text-xl ml-16 md:ml-20">Loading...</div>
+        <div className="text-white text-xl ml-16">Loading...</div>
       </div>
     );
   }
@@ -55,7 +55,7 @@ export default function Watch() {
     return (
       <div className="min-h-screen bg-black flex items-center justify-center">
         <Sidebar />
-        <div className="text-red-500 text-xl ml-16 md:ml-20">Error: {error || 'Content not found'}</div>
+        <div className="text-red-500 text-xl ml-16">Error: {error || 'Content not found'}</div>
       </div>
     );
   }
@@ -69,7 +69,7 @@ export default function Watch() {
       <Sidebar />
 
       {/* Main content with left margin for sidebar */}
-      <div className="ml-16 md:ml-20 pb-16">
+      <div className="ml-16 pb-16">
         <div className="max-w-screen-2xl mx-auto px-6 py-8">
           {/* Back button */}
           <Link to="/" className="inline-flex items-center gap-2 mb-6 text-gray-400 hover:text-white transition-colors">

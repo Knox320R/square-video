@@ -26,10 +26,8 @@ export default function VideoPlayer({ content }) {
       {content.type === 'video' ? (
         <video
           controls
-          autoPlay
           className="w-full h-full"
           poster={`/media/${content.filenameRoot}.jpg`}
-          onError={(e) => console.error('Video error:', e)}
         >
           <source src={mediaUrl} type="video/mp4" />
           Your browser does not support video playback.
@@ -40,7 +38,7 @@ export default function VideoPlayer({ content }) {
           alt={content.imgAltTxt || content.title}
           className="w-full h-full object-contain"
           onError={(e) => {
-            e.target.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="800" height="600"%3E%3Crect fill="%23111" width="800" height="600"/%3E%3C/svg%3E';
+            e.target.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="800" height="600"%3E%3Crect fill="%23000" width="800" height="600"/%3E%3C/svg%3E';
           }}
         />
       )}

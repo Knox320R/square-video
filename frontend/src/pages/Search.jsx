@@ -40,7 +40,7 @@ export default function Search() {
       <SEO title={`Search: ${query}`} />
       <Sidebar />
 
-      <div className="ml-16 md:ml-20 pb-16">
+      <div className="ml-16 pb-16">
         <div className="max-w-screen-2xl mx-auto px-6 py-8">
           <Link to="/" className="inline-flex items-center gap-2 mb-6 text-gray-400 hover:text-white transition-colors">
             <ArrowLeftIcon className="w-5 h-5" />

@@ -32,7 +32,7 @@ function BottomBar() {
   }, [links]);
 
   return (
-    <footer className="fixed bottom-0 left-0 right-0 h-12 bg-black border-t border-gray-800 flex items-center justify-center gap-6 px-4 z-40 ml-16 md:ml-20">
+    <footer className="fixed bottom-0 left-0 right-0 h-12 bg-black border-t border-gray-800 flex items-center justify-center gap-6 px-4 z-40 ml-16">
       {menuLinks.map((link, index) => (
         link.external ? (
           <a

@@ -19,7 +19,7 @@ export default function Index() {
       <Sidebar />
 
       {/* Main content area with left margin for sidebar */}
-      <div className="ml-16 md:ml-20 pb-16">
+      <div className="ml-16 pb-16">
         <div className="max-w-screen-2xl mx-auto px-6 py-8">
           {/* Header with search */}
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
