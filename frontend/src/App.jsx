@@ -5,7 +5,6 @@ import Watch from './pages/Watch';
 import Search from './pages/Search';
 import Login from './pages/Login';
 import Member from './pages/Member';
-import Health from './pages/Health';
 
 function App() {
   return (
@@ -17,7 +16,6 @@ function App() {
         <Route path="/search" element={<Search />} />
         <Route path="/login" element={<Login />} />
         <Route path="/member" element={<Member />} />
-        <Route path="/health" element={<Health />} />
       </Routes>
     </Router>
   );
