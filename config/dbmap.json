@@ -1,0 +1,39 @@
+{
+  "content": {
+    "id": "id",
+    "type": "type",
+    "ratio": "ratio",
+    "title": "title",
+    "description": "description",
+    "comments": "comments",
+    "imgAltTxt": "img_alt_txt",
+    "filenameRoot": "filename_root",
+    "parts": "parts",
+    "hasPreview": "has_preview",
+    "uploadDate": "upload_date",
+    "displayOrder": "display order",
+    "level": "level",
+    "public": "public",
+    "fr": "FR",
+    "nl": "NL",
+    "in": "IN",
+    "ms": "MS",
+    "sp": "SP",
+    "fm": "FM",
+    "lp": "LP"
+  },
+  "headers": {
+    "id": "id",
+    "name": "name",
+    "sort": "sort",
+    "text": "text"
+  },
+  "links": {
+    "id": "id",
+    "position": "position",
+    "text": "text",
+    "url": "url",
+    "squarepixelCom": "squarepixel.com",
+    "rieCom": "rie.....com"
+  }
+}
